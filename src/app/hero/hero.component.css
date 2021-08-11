@@ -1,0 +1,91 @@
+.hero{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-box{
+    width: 780px;
+    color: #ffff;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.text-box .title{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    line-height: 66px;
+}
+
+.hero #scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 12px);
+    padding-left: 18px;
+    z-index: 100;
+    
+}
+
+.hero #scrolldown .arrow {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: -7px;
+    -webkit-animation: scrolldown-anim 3.4s infinite ease;
+    -moz-animation: scrolldown-anim 3.4s infinite ease;
+    -o-animation: scrolldown-anim 3.4s infinite ease;
+    animation: scrolldown-anim 3.4s infinite ease;
+    fill: #ffffff;
+
+}
+.arrow.arrow-bottom {
+    -webkit-transform: rotate(
+-90deg
+);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(
+-90deg
+);
+}
+
+.arrow {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    fill: #000000;
+}
+user agent stylesheet
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+.text-box{
+    width: 300px;
+}
+
+.text-box h1{
+    font-size: 1.7rem;
+    line-height: 50px;
+
+}
+
+}
