@@ -1,33 +1,27 @@
 <div class="section-3">
   <div class="container-fluid">
     <div class="row">
-
       <div class="col-md-4" *ngFor="let item of allPost.results.slice(0,6); let i=index">
         <div class="cards">
           <div class="img-wrapper"><img src="{{item.image}}" alt="Jerry Smith"></div>
           <div class="content">
             <div class="section">
-              <a href="{{item.url}}" rel="nofollow noopener noreferrer" target="_blank"
-                class="title-link">
-              <h2>{{item.name}}</h2>
-
+              <a href="{{item.url}}" rel="nofollow noopener noreferrer" target="_blank" class="title-link">
+                <h2>{{item.name}}</h2>
               </a>
               <span class="status"><span class="status__icon"
                   :style="{{item.status == 'Dead' ? 'background-color:red;' : 'background-color:green;'}}"></span>
                 {{item.status}} - {{item.species}}</span>
             </div>
             <div class="section"><span class="text-gray">Last known location:</span>
-                  <a href="{{item.location.url}}" rel="nofollow noopener noreferrer" target="_blank"
-                class="title-link">
+              <a href="{{item.location.url}}" rel="nofollow noopener noreferrer" target="_blank" class="title-link">
                 {{item.location.name}}
-            </a>
+              </a>
             </div>
             <div class="section"><span class="text-gray">First seen in:</span>
-                  <a href="{{item.episode[0]}}" rel="nofollow noopener noreferrer" target="_blank"
-                class="title-link">
+              <a href="{{item.episode[0]}}" rel="nofollow noopener noreferrer" target="_blank" class="title-link">
                 {{item.episode[0]}}
-                </a>
-            
+              </a>
             </div>
           </div>
         </div>

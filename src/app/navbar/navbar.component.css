@@ -1,26 +1,21 @@
+.navbar {
+  margin-top: 10px;
+  position: fixed;
+  color: white;
+  z-index: 999;
+}
 
- .navbar{
-        margin-top: 10px;
-        position: fixed;
-        color: white;
-        z-index: 999;
-    }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    .navbar{
-        width: 100%;
-        background-color: #ffff;
-        margin-top: 0px;
-    }
-
-    .navbar img{
-        width: 80px;
-    }
-
+  .navbar {
+    width: 100%;
+    background-color: #ffff;
+    margin-top: 0px;
   }
+
+  .navbar img {
+    width: 80px;
+  }
+
+}
